@@ -27,3 +27,8 @@ dependencies {
 
 kotlin { jvmToolchain(21) }
 tasks.test { useJUnitPlatform() }
+
+
+application {
+    mainClass.set("me.carinaschoppe.werewolf.MainKt")
+}
