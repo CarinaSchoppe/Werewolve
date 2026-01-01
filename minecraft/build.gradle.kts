@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "2.3.0"
+    id("java")
+    kotlin("jvm")
     id("xyz.jpenilla.run-paper") version "3.0.2"
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }

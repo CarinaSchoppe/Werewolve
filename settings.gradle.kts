@@ -4,3 +4,7 @@ plugins {
 rootProject.name = "Werewolf"
 
 include("core", "desktop", "minecraft")
+
+project(":minecraft").buildFileName = "build.gradle.kts"
+project(":core").buildFileName = "build.gradle.kts"
+project(":desktop").buildFileName = "build.gradle.kts"
