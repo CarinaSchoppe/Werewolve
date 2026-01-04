@@ -1,4 +1,4 @@
-package me.carinaschoppe.werewolf.core.model
+package me.carinaschoppe.werewolf.core.model.player
 
 /**
  * Indicates whether a player is still participating in the current match.
@@ -8,5 +8,7 @@ enum class AliveState {
     ALIVE,
 
     /** Player has been removed from the game via death or elimination. */
-    DEAD
+    DEAD,
+
+    SPECTATOR
 }

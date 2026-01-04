@@ -1,5 +1,4 @@
-package me.carinaschoppe.werewolf.core.model
-
+package me.carinaschoppe.werewolf.core.model.roles
 
 /**
  * Comprehensive catalogue of roles supported by the engine skeleton.
@@ -27,6 +26,3 @@ enum class Role(val displayName: String, val faction: Faction, val description: 
     TRICKSTER("Trickster", Faction.NEUTRAL, "Sows chaos with unpredictable abilities"),
     ILLUSIONIST("Illusionist", Faction.NEUTRAL, "Masks true roles and spreads misinformation")
 }
-
-
-

@@ -1,10 +1,10 @@
 package me.carinaschoppe.werewolf.core.logic
 
-import me.carinaschoppe.werewolf.core.model.BasePlayer
-import me.carinaschoppe.werewolf.core.model.Faction
 import me.carinaschoppe.werewolf.core.model.GameId
 import me.carinaschoppe.werewolf.core.model.PlayerState
-import me.carinaschoppe.werewolf.core.model.Role
+import me.carinaschoppe.werewolf.core.model.player.BasePlayer
+import me.carinaschoppe.werewolf.core.model.roles.Faction
+import me.carinaschoppe.werewolf.core.model.roles.Role
 import me.carinaschoppe.werewolf.core.state.GameState
 import me.carinaschoppe.werewolf.core.util.SeededRng
 import org.junit.jupiter.api.Assertions.assertEquals

@@ -1,12 +1,12 @@
 package me.carinaschoppe.werewolf.core.logic
 
 import me.carinaschoppe.werewolf.core.event.PlayerEliminated
-import me.carinaschoppe.werewolf.core.model.AliveState
-import me.carinaschoppe.werewolf.core.model.BasePlayer
 import me.carinaschoppe.werewolf.core.model.GameId
-import me.carinaschoppe.werewolf.core.model.Phase
 import me.carinaschoppe.werewolf.core.model.PlayerState
-import me.carinaschoppe.werewolf.core.model.Role
+import me.carinaschoppe.werewolf.core.model.player.AliveState
+import me.carinaschoppe.werewolf.core.model.player.BasePlayer
+import me.carinaschoppe.werewolf.core.model.roles.Phase
+import me.carinaschoppe.werewolf.core.model.roles.Role
 import me.carinaschoppe.werewolf.core.state.GameState
 import me.carinaschoppe.werewolf.core.util.SeededRng
 import org.junit.jupiter.api.Assertions.assertEquals

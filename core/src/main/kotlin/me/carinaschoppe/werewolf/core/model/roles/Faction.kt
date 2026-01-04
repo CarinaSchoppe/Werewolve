@@ -1,4 +1,4 @@
-package me.carinaschoppe.werewolf.core.model
+package me.carinaschoppe.werewolf.core.model.roles
 
 /**
  * High-level alignment bucket used for win-condition resolution.

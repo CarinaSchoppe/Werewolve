@@ -1,4 +1,4 @@
-package me.carinaschoppe.werewolf.core.model
+package me.carinaschoppe.werewolf.core.model.roles
 
 
 /**
