@@ -5,8 +5,7 @@ import me.carinaschoppe.werewolf.core.model.roles.Role
 
 class RoleFactory {
 
-
     fun createRole(role: Role): BaseRole {
-        return role.clazz.getConstructor().newInstance()
+        return role.create()
     }
 }

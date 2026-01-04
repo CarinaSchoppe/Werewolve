@@ -1,25 +1,26 @@
 package me.carinaschoppe.werewolf.core.setup.playermanagement
 
-import me.carinaschoppe.werewolf.core.logic.Game
 import me.carinaschoppe.werewolf.core.model.player.BasePlayer
 import me.carinaschoppe.werewolf.core.model.roles.Role
 
+/**
+ * Manages the assignment of roles to players.
+ */
+class PlayerRollManagement(
+    private val roleFactory: RoleFactory = RoleFactory(),
+    private val roles: List<Role> = Role.entries
+) {
 
-class PlayerRollManagement(game: Game) {
+    private val shuffled: MutableList<Role> = roles.shuffled().toSet().toMutableList()
 
-    val shuffled: MutableList<Role> = mutableListOf()
-
-    val roleFactory = RoleFactory()
-
-    init {
-        shuffled.addAll(Role.entries)
-    }
-
-
+    /**
+     * Assigns a role to the given player.
+     *
+     * @param player the player to assign a role to
+     * @throws UnsupportedOperationException if there are no more roles to assign
+     */
     fun assignRole(player: BasePlayer) {
         val role = shuffled.removeFirstOrNull() ?: throw UnsupportedOperationException("There is no shuffled Role left to assign")
         player.role = roleFactory.createRole(role)
-
     }
-
 }
