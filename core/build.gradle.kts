@@ -1,13 +1,13 @@
 plugins {
     kotlin("jvm")
     application
+    kotlin("plugin.serialization") version "2.2.10"
     id("org.flywaydb.flyway") version "11.20.0"
 }
 
 dependencies {
     implementation("com.openai:openai-java:4.13.0")
 
-    implementation("io.ktor:ktor-server-netty:3.3.3")
 
     implementation("ai.koog:koog-agents:0.6.0")
 
