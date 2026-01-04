@@ -6,12 +6,12 @@ import me.carinaschoppe.werewolf.core.model.roles.Role
 /**
  * Manages the assignment of roles to players.
  */
-class PlayerRollManagement(
+class PlayerRoleManagement(
     private val roleFactory: RoleFactory = RoleFactory(),
     private val roles: List<Role> = Role.entries
 ) {
 
-    private val shuffled: MutableList<Role> = roles.shuffled().toSet().toMutableList()
+    private val shuffled: MutableList<Role> = roles.shuffled().toMutableList()
 
     /**
      * Assigns a role to the given player.
